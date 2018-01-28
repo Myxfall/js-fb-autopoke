@@ -23,15 +23,15 @@ function poke()
             var nbPokesDiv = document.getElementById("nb_pokes_div");
             nbPokesDiv.innerHTML = parseInt(nbPokesDiv.innerHTML) +1;
             elt_link.click();
-        }
-        var currentdate = new Date(); 
-        var datetime = "Last Sync: " + currentdate.getDate() + "/"
+            var currentdate = new Date(); 
+            var datetime = "Last Sync: " + currentdate.getDate() + "/"
                 + (currentdate.getMonth()+1)  + "/" 
                 + currentdate.getFullYear() + " @ "  
                 + currentdate.getHours() + ":"  
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
-        console.log(datetime)
+            console.log(datetime)
+        }
     }
     
     /* Make it more real */
