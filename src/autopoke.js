@@ -47,12 +47,12 @@ function poke()
     if (deSuite == 0)
     {
         console.log("Calling poke().. (0)")
-        setTimeout(poke, 1000+Math.round(Math.random()*600000));
+        setTimeout(poke, 1000+Math.round(Math.random()*60000));
     }
     else if (deSuitePrev == deSuite && noPokes > 5)
     {
         console.log("Calling poke().. (1)")
-        setTimeout(poke, 1000+Math.round(Math.random()*120000));
+        setTimeout(poke, 1000+Math.round(Math.random()*60000));
         deSuite = 0;
     }
     else if (deSuite <= 6)
